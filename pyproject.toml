@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "nonebot-plugin-sticker-saver"
+version = "0.1.0"
+description = "A very simple Nonebot plugin for saving QQ emoticons that no longer have a save option."
+authors = ["Colanns <mycolands@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/colasama/nonebot-plugin-sticker-saver"
+repository = "https://github.com/colasama/nonebot-plugin-sticker-saver"
+documentation = "https://github.com/colasama/nonebot-plugin-sticker-saver"
+keywords = ["nonebot2", "表情包", "sticker"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nonebot2 = "^2.0.0-beta.4"
+httpx = ">=0.20.0"
+nonebot-adapter-onebot = "^2.0.0-beta.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
