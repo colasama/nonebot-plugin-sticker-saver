@@ -27,7 +27,7 @@ async def handle_face_extraction(bot: Bot, event: MessageEvent):
             if seg.type == "image":
                 content = MessageSegment.text("表情：") + MessageSegment.image(seg.data["url"], type_=0)
                 # 用于 .gif 格式的表情包保存，加上一层跳转防止可能的检测
-                url = str(seg.data["url"]).replace("https://gchat.qpic.cn", TARGET_REDIRECT_URL)
+                url = str(seg.data["url"]).replace("https://gchat.qpic.cn", TARGET_REDIRECT_URL).replace("https://multimedia.nt.qq.com.cn", TARGET_REDIRECT_URL)
                 # async with AsyncClient() as client:
                 #     # @deprecated 用于 .gif 格式的表情包保存，加上一层短链接防止可能的检测
                 #     url = str(seg.data["url"]).replace("https://gchat.qpic.cn", TARGET_REDIRECT_URL)
