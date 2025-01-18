@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nonebot-plugin-sticker-saver"
-version = "0.1.3"
+version = "0.1.4"
 description = "A very simple Nonebot plugin for saving QQ emoticons that no longer have a save option."
 authors = ["Colanns <mycolands@gmail.com>"]
 license = "MIT"
